@@ -48,3 +48,9 @@ input[type=number]{
     font-family: monospace;
     font-size: 14px;
 }
+
+@media only screen and (max-width: 480px){
+    main {
+        flex-direction: columns;
+    }
+}
