@@ -20,3 +20,5 @@ function processForm() {
 
         }
 }
+
+//i tried for like 3 hours to get the decimal to toFixed. it did'nt work ._.
