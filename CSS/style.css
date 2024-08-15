@@ -2,15 +2,24 @@
 header {
     text-align: center;
 }
-
+/*Body*/
 main {
     display: flex;
+    align-items: center;
+}
+/*if you want centered flex boxes*/
+.page {
+    flex: 1;
+    height: 90%;
+    text-align: center;
+    margin: 5px 10px;
+    width: 0;
 }
 
 aside {
     padding: 48px;
 }
-
+/*form*/
 form {
     background: thistle;
     padding: 12px;
@@ -83,9 +92,29 @@ input[type=number]{
     font-family: monospace;
     font-size: 14px;
 }
+/*BMI chart table*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 1px black;
+    gap: 1px;
+}
 
-@media only screen and (max-width: 1000px){
+.grid-container > div {
+    background-color: #f2f2f2;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 770px){
     main {
-        flex-direction: columns;
+        display: flex;
+        flex-direction: column;
+        background-color: #E1E9E5;
+    }
+
+    .page {
+        text-align: center;
+        margin: 5px 10px;
+        width: auto;
     }
 }

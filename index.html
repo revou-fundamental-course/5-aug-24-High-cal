@@ -14,7 +14,7 @@
     </header>
     <!--content-->
     <main>
-      <aside>
+      <aside class="page">
         <!--Header-->
         <article style="margin: 10px;">
           Body mass index (BMI) is a value derived from the mass (weight) and height of a person. The BMI is defined as the body mass divided by the square of the body height, and is expressed in units of kg/m2, resulting from mass in kilograms (kg) and height in metres (m).
@@ -41,8 +41,8 @@
           </div>
           <!--Calculate-->
           <div class="form-button-container">
-            <button id="count" class="button bg-count" type="button" onclick="formValidate()">Count BMI</button>
-            <button id="reset" class="button bg-reset" type="buttom" onclick="formValidate()">Reset</button>
+            <button id="count" class="button bg-count" type="button" onclick="processForm()">Count BMI</button>
+            <button id="reset" class="button bg-reset" type="button" onclick="processForm()">Reset</button>
           </div>
         </form>
 
@@ -50,14 +50,29 @@
         <header>
           <h1>Form Info</h1>
         </header>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minus minima tempore. Atque obcaecati modi deserunt, odit quaerat neque rerum! Sequi nulla, excepturi labore amet provident totam sunt voluptates illum.</p>
+        <p>The BMI chart is a good indicator on where to go or start on your fitness journey, from this information you can determine whether to go on a diet or do some exercise to increase your weight/muscle mass.</p>
         </article>
       </aside>
-      
-      <aside>
-        <section>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam earum ratione cupiditate, nulla tempora expedita provident, nostrum debitis nisi accusantium dolor possimus at alias vel, quibusdam laboriosam quidem rem fuga.</section>
-        <form action="
-        "></form>
+      <!--Going to side now-->
+      <aside class="page">
+        <article>    
+          <h1>Your BMI is</h1>
+          <h1 id="result">0</h1>
+          <section>
+            <td>BMI Chart</td>
+            <div class="grid-container">
+              <div>Underweight</div>
+              <div><18.5</div>
+              <div>Normal</div>
+              <div>18.5-24.9</div>
+              <div>Overweight</div>
+              <div>25-29.9</div>
+              <div>Obese</div>
+              <div>>30</div>
+            </div>
+
+          </section>
+        </article>
       </aside>
     </main>
 
